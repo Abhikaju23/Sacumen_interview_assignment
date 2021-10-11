@@ -36,71 +36,9 @@ print(type(convstr_to_dict(data)))
 
 
 sys.exit(0)
-mystr = ''
-for k in ans1:
-    print(k.split('='))
-    temp1 = k.split('=')
-    if len(temp1)>2:
-        i = 1
-        for j in temp1:
-            if i<len(temp1):
-                mystr = mystr+temp1[i]
-                i+=1
-        print(mystr)
- #   keylist.append(temp1[0])
-
-
-
-
-#print(keylist)
-#re.findall(['=']{1})
 
 
 
 
 
 
-
-sys.exit(0)
-#res = re.split(', |_|-|!', data)
-res = re.split("[\n |]+", data)
-print(res)
-res.remove("SAC:0",'Sacumen')
-print(res)
-#data = {k.split('=')[0].strip():k.split('=')[1].strip() for k in res}
-#print(data)
-
-
-
-
-
-
-
-
-sys.exit(0)
-
-
-def sampleinput(data:str):
-    data = [k for k in data.split('\n') if len(k)>3]
-    print(data)
-    print('-------------------------------------------------------------')
-    data = {k.split('=')[0].strip():k.split('=')[1].strip() for k in data}
-    print('-------------------------------------------------------------')
-    for key,value in data.items():
-        print(key,":",value)
-
-sampleinput(data)
-
-
-
-
-
-
-
-
-
-
-
-
-
-sys.exit(0)
